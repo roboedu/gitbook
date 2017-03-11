@@ -1,5 +1,7 @@
 # Links
 
+[I'm an inline-style link](https://www.google.com)
+
 [https://www.walmart.com/ip/HB-P1801-2-4GHz-4WD-1-18-Scale-4x4-Rock-Crawler-Off-road-Vehicle-RC-Car-Truck/118434291](crawler)
 
 [http://www.geek.com/news/rc-car-with-on-board-raspberry-pi-can-be-driven-from-anywhere-1553277/](onboard pi)
