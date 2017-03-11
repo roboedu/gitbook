@@ -2,6 +2,7 @@
     "plugins": [
 	"youtube",
 	"katex",
-	"todo"
+	"todo",
+	"sequence-diagram-lastest"
     ]
 }
