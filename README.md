@@ -17,5 +17,6 @@ $$
 
 Or using the templating syntax:
 
-{% math %}\int_{-\infty}^\infty g(x) dx
+{% math %}
+\int_{-\infty}^\infty g(x) dx
 {% endblock %}
