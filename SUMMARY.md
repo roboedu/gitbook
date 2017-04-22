@@ -7,5 +7,5 @@
 * [esp8266 1](esp8266-2.md)
 * [Stepper Motor](stepper.md)
 * [Use](use.md)
-* [B](battery/battery.md)
-* [B](battery/battery-2.md)
+* [Battery](battery/battery.md)
+* [Battery 2](battery/battery-2.md)

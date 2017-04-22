@@ -1,8 +1,7 @@
 Battery
 -------
  
-Anyone running a battery-powered project knows how frustrating it can be when a battery dies or runs too low to prevent brown-out conditions. The
-[Uh-Oh Battery Level Indicator Kit](https://www.sparkfun.com/products/11087) can help prevent these frustrations.
+Anyone running a battery-powered project knows how frustrating it can be when a battery dies or runs too low to prevent brown-out conditions. The [Uh-Oh Battery Level Indicator Kit](https://www.sparkfun.com/products/11087) can help prevent these frustrations.
 
 [![Uh-Oh Battery
 Indicator](./Uh-Oh%20Battery%20Level%20Indicator%20Hookup%20Guide%20-%20learn.sparkfun.com_files/11087-03.jpg)](./Uh-Oh%20Battery%20Level%20Indicator%20Hookup%20Guide%20-%20learn.sparkfun.com_files/11087-03.jpg)

@@ -4,8 +4,7 @@ This tutorial gives an overview on how to determine the duration of a recharegea
 
 [Arduino/Genuino MKR1000](https://www.arduino.cc/en/Main/ArduinoMKR1000)
 
-Using a simple formula, it is possible to calculate how long a charge can last. The duration is related to the current drawn by the board under different conditions that depend on the sketch and the hardware functionalities used. In this example we use a [LiPo] battery
-rated at 1400mAh.
+Using a simple formula, it is possible to calculate how long a charge can last. The duration is related to the current drawn by the board under different conditions that depend on the sketch and the hardware functionalities used. In this example we use a [LiPo] battery rated at 1400mAh.
 
 ### Hardware Required
 
@@ -22,47 +21,27 @@ Battery connected to the board through the on-board JST connector
 
 #### Note
 
-The charging circuit on the MKR1000 board has a charge
-current fixed at 350mA and a standby charge time of 4 hours.
-LiPo battieries should not be charged with a current higher
-than a half of the total capacity. MKR1000 is therefore
-designed to use batteries with **'at least 700mAh**' of capacity. The
-maximum capacity is not critical, but bigger batteries require more time
-to fully charge, therefore we suggest a **maximum** of 1400-1500mAh.
+The charging circuit on the MKR1000 board has a charge current fixed at 350mA and a standby charge time of 4 hours. LiPo battieries should not be charged with a current higher than a half of the total capacity. MKR1000 is therefore designed to use batteries with **'at least 700mAh**' of capacity. The maximum capacity is not critical, but bigger batteries require more time to fully charge, therefore we suggest a **maximum** of 1400-1500mAh.
 
 ### Computing Battery Life
 
-Computing how long a battery can last is generally speaking quite
-simple. Each rechargeable battery has its capacity printed on its
-package, expressed in mAh. This value means that the battery is able to
-provide the current stated for one hour and after that it will be
-depleted. If we draw less current, the battery will take more time to
-discharge. If we know the average current consumption of our circuit we
-can compute the battery life, expressed in hour using the following
-formula:
+Computing how long a battery can last is generally speaking quite simple. Each rechargeable battery has its capacity printed on its package, expressed in mAh. This value means that the battery is able to provide the current stated for one hour and after that it will be
+depleted. If we draw less current, the battery will take more time to discharge. If we know the average current consumption of our circuit we
+can compute the battery life, expressed in hour using the following formula:
 
 Battery Life = (Battery Capacity) / (Average Current Consumption) * 0.7
 
-If we want the **worst case** for battery life duration, we can use the
-maximum current absorbed by our circuit instead of the average one:
+If we want the **worst case** for battery life duration, we can use the maximum current absorbed by our circuit instead of the average one:
 
 Battery Life = (Battery Capability) / (Maximum Current Consumption) *0.7
 
 #### Note
 
-Please note that the factor of 0.7 makes allowances for external factors
-which can affect battery life for *out of specs* usage (deep discharge
-under suggested voltage, mechanical stress etc).
+Please note that the factor of 0.7 makes allowances for external factors which can affect battery life for *out of specs* usage (deep discharge under suggested voltage, mechanical stress etc).
 
 ### MKR1000 current consumption
 
-The main feature of the MKR1000 board that affects battery
-life is the WiFi connectivity: it absorbs roughly 100mA
-when connected to an Access Point and data transfers are on-going. If
-the WiFi module is not initialized, it is automatically set
-into low power mode. The consumption of the micro-controller is about
-20mA. A sketch using WiFi connection has therefore an
-average current absorption of 120mA. If we run this information in our
+The main feature of the MKR1000 board that affects battery life is the WiFi connectivity: it absorbs roughly 100mA when connected to an Access Point and data transfers are on-going. If the WiFi module is not initialized, it is automatically set into low power mode. The consumption of the micro-controller is about 20mA. A sketch using WiFi connection has therefore an average current absorption of 120mA. If we run this information in our
 formula we get:
 
 Application Run Time = Battery Life = (1400mAh) / (120mA) \* 0.7 = 8.16h
