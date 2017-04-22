@@ -1,11 +1,11 @@
 # Summary
 
 * [Introduction](README.md)
-* [Preface](preface.md)
 * [Links](links.md)
-* [nodemcu](nodemcu.md)
-* [esp1](esp8266-1.md)
-* [esp1](esp8266-2.md)
-* [stepper](stepper.md)
-* [use](use.md)
-
+* [Nodemcu](nodemcu.md)
+* [esp8266 1](esp8266-1.md)
+* [esp8266 1](esp8266-2.md)
+* [Stepper Motor](stepper.md)
+* [Use](use.md)
+* [B](battery/battery.md)
+* [B](battery/battery-2.md)
