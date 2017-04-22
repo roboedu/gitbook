@@ -1,6 +1,5 @@
 {
     "plugins": [
-	"youtube",
 	"katex",
 	"todo"
     ]
